@@ -1,4 +1,4 @@
-<a routerLink="/administracion/crear-cliente" class="btn">Nuevo Cliente</a>
+<a routerLink="/administracion/crear-cliente" class="btn orange darken-4">Nuevo Cliente</a>
 <table class="table responsive">
     <thead>
         <tr>
@@ -18,8 +18,9 @@
                 Correo
             </th>
             <th>
-                Editar
+                Acciones
             </th>
+            
         </tr>
     </thead>
     <tbody>
@@ -40,8 +41,13 @@
                 {{p.correo}}
             </td>
             <td>
-                <a routerLink="/administracion/editar-cliente/{{p.id}}" class="btn">
+                <a routerLink="/administracion/editar-cliente/{{p.id}}" class="btn blue darken-3">
                     <i class="material-icons">create</i>
+                              </a>
+            </td>
+            <td>
+                <a routerLink="/administracion/editar-cliente/{{p.id}}" class="btn red accent-4">
+                    <i class="material-icons">delete</i>
                               </a>
             </td>
         </tr>
