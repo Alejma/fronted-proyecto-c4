@@ -14,6 +14,7 @@ import { CrearClienteComponent } from './clientes/crear-cliente/crear-cliente.co
 import { EditarClienteComponent } from './clientes/editar-cliente/editar-cliente.component';
 import { EliminarClienteComponent } from './clientes/eliminar-cliente/eliminar-cliente.component';
 import { BuscarClienteComponent } from './clientes/buscar-cliente/buscar-cliente.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -33,7 +34,9 @@ import { BuscarClienteComponent } from './clientes/buscar-cliente/buscar-cliente
   ],
   imports: [
     CommonModule,
-    AdministracionRoutingModule
+    AdministracionRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class AdministracionModule { }

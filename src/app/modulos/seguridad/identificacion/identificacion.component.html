@@ -4,7 +4,7 @@
         <div class="card-action center-align indigo darken-4 white-text">
           <h3>Ingreso de usuarios</h3>
         </div>
-        <form>
+        <form [formGroup]="fgValidador" (ngSubmit)="IdentificarUsuario()">
         <div class="row">
             <div class="input-field col s12">
             <i class="material-icons prefix">email</i> 
@@ -20,7 +20,7 @@
           </div>
           </div>
           <div class="row center-align">
-            <button  class="btn waves-effect green"  type="submit" name="action">Entrar
+            <button [disabled]="!fgValidador.valid" class="btn waves-effect green"  type="submit" name="action">Entrar
                 <i class="material-icons right">send</i>
             </button>
           </div>
