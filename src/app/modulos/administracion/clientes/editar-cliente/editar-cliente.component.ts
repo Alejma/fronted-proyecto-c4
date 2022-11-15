@@ -58,10 +58,10 @@ id: string ='';
     p.id = this.id;
     // Creacion del objeto cliente que va a ser mandando en el post
     this.servicioCliente.ActualizarCliente(p).subscribe((datos: ModeloCliente) => {
-      alert("Producto actualizado correctamente")
+      alert("Cliente actualizado correctamente")
       this.router.navigate(["/administracion/listar-clientes"]);
     }, (err: any) =>{
-      alert("Error actualizando el producto")
+      alert("Error actualizando cliente")
     })
   }
 }

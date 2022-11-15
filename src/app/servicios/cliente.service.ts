@@ -40,7 +40,7 @@ export class ClienteService {
   }
 
   EliminarCliente(id: string): Observable<any>{
-    return this.http.delete(`${this.url}/clientes${id}`,{
+    return this.http.delete(`${this.url}/clientes/${id}`,{
       headers: new HttpHeaders({
         'Authorization': `Bearer ${this.token}`
       })

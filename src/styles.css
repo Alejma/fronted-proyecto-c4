@@ -7,3 +7,10 @@ nav,footer{
      background-color: rgb(255, 151, 66);
    }
 
+.imagenProducto{
+    width: 100px;
+}
+
+.imagen_inicio{
+    width: 870px;
+}
